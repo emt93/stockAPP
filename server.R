@@ -1,5 +1,3 @@
-# server.R
-
 library(quantmod)
 
 shinyServer(function(input, output) {
@@ -19,10 +17,7 @@ shinyServer(function(input, output) {
                             type = "candlestick")
                
                 if (input$rsi) addRSI()
-                
-               
-              
-        
+          
         })
 })
 
